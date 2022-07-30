@@ -25,7 +25,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 /**
  * @author Saman Delfani
  * @version 1.0
- * @since 2022-07-30 23:28:26
+ * @since 2022-07-31 00:51:55
  */
 @Configuration
 public class ChuckBasedJob {

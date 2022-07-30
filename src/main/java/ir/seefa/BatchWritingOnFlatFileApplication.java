@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 /**
  * @author Saman Delfani
  * @version 1.0
- * @since 2022-07-30 23:28:02
+ * @since 2022-07-31 00:52:09
  */
 @SpringBootApplication
 @EnableBatchProcessing
