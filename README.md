@@ -1,3 +1,3 @@
-# batch-reading-from-db-multi-thread-scenarios
+# batch-writing-on-flat-file
 
-Sample code to batch reading mysql datasource data table with Spring chunk reader item solution and JdbcPagingItemReaderBuilder class
+Sample code to batch reading mysql datasource data table with Spring chunk reader item solution with JdbcPagingItemReaderBuilder class and writing to flat file with FlatFileItemWriter class

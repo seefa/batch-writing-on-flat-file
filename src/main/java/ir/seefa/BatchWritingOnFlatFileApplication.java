@@ -11,8 +11,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  */
 @SpringBootApplication
 @EnableBatchProcessing
-public class BatchReadingFromDBInMultiThreadScenariosApplication {
+public class BatchWritingOnFlatFileApplication {
     public static void main(String[] args) {
-        SpringApplication.run(BatchReadingFromDBInMultiThreadScenariosApplication.class, args);
+        SpringApplication.run(BatchWritingOnFlatFileApplication.class, args);
     }
 }

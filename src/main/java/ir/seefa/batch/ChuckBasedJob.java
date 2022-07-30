@@ -85,7 +85,7 @@ public class ChuckBasedJob {
 
     @Bean
     public Step chunkBasedReadingFlatFileStep() throws Exception {
-        return this.stepBuilderFactory.get("chunkBasedReadingFromDBInMultiThreadScenarios")
+        return this.stepBuilderFactory.get("chunkBasedWritingOnFlatFileStep")
                 .<Customer, Customer>chunk(10)                  // Must be equal to queryProvider page size
                 .reader(itemReader())
                 .writer(itemWriter())
@@ -94,7 +94,7 @@ public class ChuckBasedJob {
 
     @Bean
     public Job chuckOrientedJob() throws Exception {
-        return this.jobBuilderFactory.get("chunkOrientedReadingDbInMultiThreadScenariosJob")
+        return this.jobBuilderFactory.get("chunkOrientedWritingOnFlatFileJob")
                 .start(chunkBasedReadingFlatFileStep())
                 .build();
 
